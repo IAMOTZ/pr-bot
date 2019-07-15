@@ -1,23 +1,15 @@
 # pr-bot
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that A pr bot
+> A GitHub App that checks if some specific files are changed in a Github Pull Request and add a comment if necessary.
+
 
 ## Setup
+- Copy the content of `.env.example` file into a `.env` file which you have to create at the root directory
 
-```sh
-# Install dependencies
-npm install
+- Provide values to the environment variables specified in `.env` file
 
-# Run the bot
-npm start
-```
+- NB: You have to register the GitHub app to get some of the values in `.env`
 
-## Contributing
+- Use `npm install` to install project dependencies
 
-If you have suggestions for how pr-bot could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
-
-For more, check out the [Contributing Guide](CONTRIBUTING.md).
-
-## License
-
-[ISC](LICENSE) © 2019 Tunmise Ogunniyi <ogunniyitunmise@gmail.com>
+- Use `npm start` to start the app

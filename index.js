@@ -8,7 +8,7 @@ module.exports = (app) => {
 
   app.log('App configured to check the following paths: ', pathsToCheck);
 
-  app.on(['pull_request.opened', 'pull_request.reopened'], async (context) => {
+  app.on('pull_request.opened', async (context) => {
     context.log('Pull request event handler triggered.');
 
     const { diff_url } = context.payload.pull_request;
